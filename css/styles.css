@@ -1291,8 +1291,14 @@ pre code {
   }
 
   .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .col-lg-44 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 
   .col-lg-5 {

@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Rodrigo M Bukowitz Portfolio
+        title Rodrigo Malhães Bukowitz Portfolio
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
@@ -19,6 +19,7 @@ html(lang='en')
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet", type='text/css')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -28,7 +29,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Rodrigo M Bukowitz 
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Rodrigo Malhães Bukowitz 
                 button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
@@ -77,6 +78,14 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/InnHell/Move.png', alt='')
+                    // Portfolio Item 4
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal4')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/InnHell/ThrowHands.png', alt='')
+                    
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
             .container
@@ -84,7 +93,8 @@ html(lang='en')
                 h2.page-section-heading.text-center.text-uppercase.text-white About me 
                 // About Section Content
                 h3.lead
-                    | I'm just a brazilian guy fascinated and very invested in making games. 
+                    | Greetings!
+                    | My name is Rodrigo and I am 24 years old, I was born in Rio de Janeiro, Brazil. For as long as I remember, I've always been a big fan of video games and now I am having I great time developing them.   
                 h3.lead
                     | In the middle of my degree in computer engineering, I fell in love with game development and the challenges that come with it. Since then I have been specializing in the area in order to become a great game developer.
                 // About Section Button
@@ -98,16 +108,16 @@ html(lang='en')
             .container
                 .row
                     // Footer Location
-                    .col-lg-4.mb-5.mb-lg-0
+                    .col-lg-44.mb-5.mb-lg-0
                         h5.text.mb-4 Email: rodrigomalhaes@gmail.com
                         h5.text.mb-4 Mobile:
                             br 
                             | +55 (21) 991666783
                     // Footer Social Icons
-                    .col-lg-4.mb-5.mb-lg-0
+                    .col-lg-44.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4
                         |
-                    .col-lg-4.mb-5.mb-lg-0
+                    .col-lg-44.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
                         //- a.btn.btn-outline-light.btn-social.mx-1(href='#!')
                         //-     i.fab.fa-fw.fa-twitter
@@ -178,7 +188,7 @@ html(lang='en')
                                         | O Formigueiro (That means in English "The anthill") is a stealth and survival game about a half-robot ant inside an anthill full of monstrous robot ants.
                                     img.img-fluid.rounded.mb-5(src='assets/img/portfolio/InnHell/gif2.gif', alt='')
                                     h3.mb-5
-                                        | Your object is to get out of this huge maze all in the dark, but don't worry because you got an ant sonar. Your powerful sonar will make you see through all the enemies and puzzles and help you see the light of the day out of the anthill. 
+                                        | Your objective is to get out of this huge maze all in the dark, but don't worry because you got an ant sonar. Your powerful sonar will make you see through all the enemies and puzzles and help you see the light of the day out of the anthill. 
                                     img.img-fluid.rounded.mb-5(src='assets/img/portfolio/InnHell/Formiga2.png', alt='')
                                     h3.mb-5 
                                         | O Formigueiro was developed by Prisma Game Lab an independent game studio made by students from Pontifical Catholic University of Rio de Janeiro. I was part of the Unity Developer`s team, I worked on the sonar effect and all other graphic features about the game,  developing some levels and implementing the core mechanics. 
@@ -201,6 +211,8 @@ html(lang='en')
                                 .col-lg-8
                                     // Portfolio Modal - Title
                                     h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal3Label Paintings Don't Move
+                                    p.mb-5
+                                        |  
                                     // Portfolio Modal - Image
                                     img.img-fluid.rounded.mb-5(src='assets/img/portfolio/InnHell/Move2.png', alt='')
                                     // Portfolio Modal - Text
@@ -210,6 +222,35 @@ html(lang='en')
                                     h3.mb-5 
                                         | This game was developed during the "Mini Jam 61: Ancient Egypt"  hosted by Itch.io. It was a very interesting craft and develop the whole game concept in only 72 hours. I learn about basic shader properties, make a realistic and satisfactory scope, and how to coordinate a team through the entire jam. 
                                     a(href="https://tehvict.itch.io/paintings-dont-move") For more info check out the game page 
+                                    h3.mb-5
+                                        |  
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Close Window
+        // Portfolio Modal 4
+        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal3Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal4Label Throw Arms
+                                    p.mb-5
+                                        |  
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/InnHell/throwHandsG.gif', alt='')
+                                    // Portfolio Modal - Text
+                                    h3.mb-5
+                                        | Throw Hands is a Local/Online Multiplayer fight game with a funny twist: whenever your character punches, it launches its arm. To punch again, you must pick the arm back up.   
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/InnHell/THimg1.png', alt='')
+                                    h3.mb-5 
+                                        | This game was developed in Unity and used the free Photon Bolt asset to implement all the multiplayer experience. I worked mainly on the multiplayer features, gameplay, and bug fixes.
+                                    a(href="https://tehvict.itch.io/throw-hands") For more info check out the game page 
                                     h3.mb-5
                                         |  
                                     button.btn.btn-primary(data-dismiss='modal')
