@@ -376,7 +376,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
 h4, .h4 {
@@ -10034,6 +10034,7 @@ h3 {
 
 .btn-xl {
   padding: 1rem 1.75rem;
+  margin-top: 8rem;
   font-size: 1.25rem;
 }
 
@@ -10140,7 +10141,7 @@ h3 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
